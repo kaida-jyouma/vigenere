@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vigenere Cipher</title>
+    <script src="vigenere.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="vigenere.css" type="text/css" media="all"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+</head>
+<body>
+    <h2 class=title>Vigenere Cipher -Extend version</h2>
+    <hr class="hr-1" color="#000000" width="99%">
+    <div class="main">
+        <p class="sbttl"><span id="ecbt" onclick="dcbt(0)"><u>Encode</u></span>&#32;/&#32;<span id="dcbt" onclick="dcbt(1)">Decode</span></p>
+        <div id="encode">
+            <input type="text" class="key" name="key-e" id="key-e" placeholder="input key..."><br>
+            <hr class="hr-2" color="#646464" width="45%">
+            <textarea class="txtar" name="txt-e" id="txt-e" placeholder="input text..."></textarea>
+            <br>
+            <input class="dcdb" type="button" name="dcd-e" id="dcd-e" value="Encode" onclick="encode()">
+            <br>
+            <div class="result" id="ans-ed" hidden="hidden">
+                Result:&#32;
+                <span id="ans-e"></span>
+            </div>
+        </div>
+        <!--<hr class="hr-1" color="#000000" width="75%">-->
+        <div id="decode" hidden="hidden">
+            <input type="text" class="key" name="key-d" id="key-d" placeholder="input key..."><br>
+            <hr class="hr-2" color="#646464" width="45%">
+            <textarea class="txtar" name="txt-d" id="txt-d" placeholder="input cryptogram..."></textarea>
+            <br>
+            <input class="dcdb" type="button" name="dcd-d" id="dcd-d" value="Decode" onclick="decode()">
+            <br>
+            <div class="result" id="ans-dd" hidden="hidden">
+                Result:&#32;
+                <span id="ans-d"></span>
+            </div>    
+        </div>
+    </div>
+</body>
+</html>

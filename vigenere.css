@@ -1,0 +1,62 @@
+html{
+    font-family: Monospace;
+    font-weight: 300;
+    text-align: center;
+    user-select: none;
+}
+.title{
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 24px;
+}
+.sbttl{
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 18px;
+}
+.hr-2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.key{
+    font-family: inherit;
+    font-weight: 200;
+    width: 200px;
+    height: 28px;
+    outline: none;
+    border-style: none;
+    font-size: 16px;
+}
+.key:focus{
+    background-color: #f4f4f4;
+}
+.txtar{
+    width: 540px;
+    height: 300px;
+    outline: none;
+    border-style: none;
+    font-size: 16px;
+    resize: none;
+    font-family: inherit;
+}
+.txtar:focus{
+    background-color: #f4f4f4;
+}
+.dcdb{
+    font-size: 17px;
+    font-family: inherit;
+    font-weight: 200;
+    width: 150px;
+    height: 35px;
+}
+.result{
+    height: 20px;
+    margin-top: 20px;
+    font-size: 21px;
+}
+#ans-e{
+    user-select: all;
+}
+#ans-d{
+    user-select: all;
+}
