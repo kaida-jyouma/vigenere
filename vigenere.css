@@ -14,6 +14,12 @@ html{
     font-weight: inherit;
     font-size: 18px;
 }
+#ecbt{
+    cursor: pointer;
+}
+#dcbt{
+    cursor: pointer;
+}
 .hr-2{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -33,7 +39,6 @@ html{
 .txtar{
     width: 540px;
     height: 300px;
-    outline: none;
     border-style: none;
     font-size: 16px;
     resize: none;
@@ -48,6 +53,16 @@ html{
     font-weight: 200;
     width: 150px;
     height: 35px;
+}
+.dcdb:hover{
+    background-color: #d0ff9c;
+    outline-color: #d0ff9c;
+    border: none;
+}
+.dcdb:focus{
+    background-color: #d0ff9c;
+    outline-color: #d0ff9c;
+    border-color: #d0ff9c;
 }
 .result{
     height: 20px;
