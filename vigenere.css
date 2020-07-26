@@ -46,6 +46,7 @@ html{
 }
 .txtar:focus{
     background-color: #f4f4f4;
+    outline: none;
 }
 .dcdb{
     font-size: 17px;
