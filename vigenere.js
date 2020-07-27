@@ -36,7 +36,7 @@ function encode(){
             var k1 = tb[0].indexOf(key[i%key.length]);
             cipher.push(tb[k1][k0]);
         }
-        document.getElementById('ans-e').value = cipher.join("");
+        document.getElementById('ans-e').innerHTML = cipher.join("");
         document.getElementById('ans-ed').hidden = false;
         console.log(cipher);
     }
@@ -73,7 +73,7 @@ function decode(){
             var k1 = tb[k0].indexOf(cipher[i]);
             text.push(tb[0][k1]);
         }
-        document.getElementById('ans-d').value = text.join("");
+        document.getElementById('ans-d').innerHTML = text.join("");
         document.getElementById('ans-dd').hidden = false;
         console.log(text);
     }
