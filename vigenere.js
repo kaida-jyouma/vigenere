@@ -13,7 +13,7 @@ function dcbt(x){
 }
 function encode(){
     // used character: abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890,.+-*/\=:;_^!?&#$%'()[]{}
-    var l = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', ',', '.', '+', '-', '*', '/', '\\', "¥", '=', ':', ';', '_', '^', "~", "|", '!', '?', '&', '#', '$', '%', "@", "'", '`', '"', '(', ')', '[', ']', '{', '}', ' ', '\n'];
+    var l = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', ',', '.', '+', '-', '*', '/', '\\', "¥", '=', ':', ';', '_', '^', "~", "|", '!', '?', '&', '#', '$', '%', "@", "'", '`', '"', '(', ')', '[', ']', '{', '}', ' '];
     tb = [];
     for (i=0;i<l.length;i++){//for i in range(len(l)):
         if (i > 0){
@@ -36,14 +36,14 @@ function encode(){
             var k1 = tb[0].indexOf(key[i%key.length]);
             cipher.push(tb[k1][k0]);
         }
-        document.getElementById('ans-e').innerHTML = cipher.join("");
+        document.getElementById('ans-e').value = cipher.join("");
         document.getElementById('ans-ed').hidden = false;
         console.log(cipher);
     }
 }
 function decode(){
     // used character: abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890,.+-*/\=:;_^!?&#$%'()[]{}
-    var l = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', ',', '.', '+', '-', '*', '/', '\\', "¥", '=', ':', ';', '_', '^', "~", "|", '!', '?', '&', '#', '$', '%', "@", "'", '`', '"', '(', ')', '[', ']', '{', '}', ' ', '\n'];
+    var l = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', ',', '.', '+', '-', '*', '/', '\\', "¥", '=', ':', ';', '_', '^', "~", "|", '!', '?', '&', '#', '$', '%', "@", "'", '`', '"', '(', ')', '[', ']', '{', '}', ' '];
     tb = [];
     for (i=0;i<l.length;i++){//for i in range(len(l)):
         if (i > 0){
@@ -73,7 +73,7 @@ function decode(){
             var k1 = tb[k0].indexOf(cipher[i]);
             text.push(tb[0][k1]);
         }
-        document.getElementById('ans-d').innerHTML = text.join("");
+        document.getElementById('ans-d').value = text.join("");
         document.getElementById('ans-dd').hidden = false;
         console.log(text);
     }
