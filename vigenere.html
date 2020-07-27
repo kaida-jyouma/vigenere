@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>Vigenere Cipher</title>
     <script src="vigenere.js" type="text/javascript" charset="utf-8"></script>
-    <link rel="stylesheet" href="vigenere.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="vigenere.css" type="text/css" media="all">
+    <link rel="stylesheet" href="vigenere-1.css" media="screen and (max-width:480px)">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 </head>
 <body>
@@ -14,7 +15,7 @@
         <p class="sbttl"><span id="ecbt" onclick="dcbt(0)"><u>Encode</u></span>&#32;/&#32;<span id="dcbt" onclick="dcbt(1)">Decode</span></p>
         <div id="encode">
             <input type="text" class="key" name="key-e" id="key-e" placeholder="input key..."><br>
-            <hr class="hr-2" color="#646464" width="45%">
+            <hr class="hr-2" color="#646464">
             <textarea class="txtar" name="txt-e" id="txt-e" placeholder="input text..."></textarea>
             <br>
             <input class="dcdb" type="button" name="dcd-e" id="dcd-e" value="Encode" onclick="encode()">
