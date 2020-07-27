@@ -27,7 +27,7 @@ html{
 .key{
     font-family: inherit;
     font-weight: 200;
-    width: 200px;
+    width: 22.5%;
     height: 28px;
     outline: none;
     border-style: none;
@@ -37,7 +37,7 @@ html{
     background-color: #f4f4f4;
 }
 .txtar{
-    width: 540px;
+    width: 42.5%;
     height: 300px;
     border-style: none;
     font-size: 16px;
@@ -52,18 +52,28 @@ html{
     font-size: 17px;
     font-family: inherit;
     font-weight: 200;
-    width: 150px;
-    height: 35px;
+    width: 18%;
+    height: 3%;
+    border-width: 1px;
+    margin-top: 1.5%;
 }
 .dcdb:hover{
     background-color: #d0ff9c;
     outline-color: #d0ff9c;
-    border: none;
+    border-color: #d0ff9c;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 2px;
+    border-left-width: 2px;
 }
 .dcdb:focus{
     background-color: #d0ff9c;
     outline-color: #d0ff9c;
     border-color: #d0ff9c;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 2px;
+    border-left-width: 2px;
 }
 .result{
     height: 20px;
