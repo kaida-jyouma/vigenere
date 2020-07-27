@@ -28,7 +28,7 @@ html{
 .key{
     font-family: inherit;
     font-weight: 200;
-    width: 22.5%;
+    width: 60%;
     height: 28px;
     outline: none;
     border-style: none;
@@ -50,11 +50,11 @@ html{
     outline: none;
 }
 .dcdb{
-    font-size: 17px;
+    font-size: 18px;
     font-family: inherit;
     font-weight: 200;
-    width: 18%;
-    height: 3%;
+    width: 35%;
+    height: 5%;
     border-width: 1px;
     margin-top: 1.5%;
 }
